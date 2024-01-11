@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о часах</title>
+    <script src="C:\Users\sikoz\Desktop\jquery-3.6.1.min.js"></script>
+    <style>
+        :root {
+        --color-primiary: #0073ff;
+        --color-white: #e9e9e9;
+        --color-black: #141d28;
+        --color-black-1: #212b38;
+        }
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+        font-family: sans-serif;
+        background-color: #e5e5e5;
+        background: url(.jpg) 50% 50% / 100% 100% no-repeat fixed;
+        margin: 0;
+        padding: 0;
+        }
+        .menu__bar {
+        background-color: #07080A;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 5%0;
+        }
+
+        .logo span {
+        color: var(--color-primiary);
+        float: left;
+        }
+
+        .menu__bar ul {
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .menu__bar ul li {
+        padding: 10px 30px;
+        position: relative;
+          
+        }
+
+        .menu__bar ul li a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.3s;
+        }
+
+        .menu__bar ul li a:hover {
+        color: #F5C645;
+        } 
+
+        .footer {
+        position: absolute;
+        left: 0;
+        bottom: -300px;
+        width: 100%;
+        height: 270px;
+        background-color: #07080A;
+        }
+
+        .footer ul {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .footer ul li {
+        padding: 15px 25px;
+        padding-left: 100px;
+        position: relative;
+        } 
+
+        .footer ul li a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.3s;
+        }
+
+        .content h1 {
+          padding-left: 100px;
+          padding-top: 50px;
+          font-weight: normal;
+        }
+
+        .content a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.6);
+          transition: all 0.3s;
+        }
+
+        .content a:hover {
+          color: #213145;
+        }
+
+        .content p {
+          padding-left: 100px;
+          padding-top: 10px;
+        }
+
+        .content span {
+          font-size: 15px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+
+        .content .blog {
+          padding-left: 100px;
+          padding-top: 50px;
+        }
+
+
+    </style>
+</head>
+<body style="opacity:0;transition:.5s;">
+    <div class="menu__bar"> 
+        <div class="logo">
+          <a href="1.html"><img src="47.png" alt="logo" width="40" height="50" ></a>
+        </div>    
+        <ul>
+          <li><a href="1.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li><a href="otzivi.html">Отзывы клиентов</a></li>
+          <li><a href="magazin.html">Магазин</a></li>
+          <li><a href="blog.html">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <ul>
+          <li><a href="1.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li><a href="otzivi.html">Отзывы клиентов</a></li>
+          <li><a href="magazin.html">Магазин</a></li>
+          <li><a href="blog.html">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="content">     
+        <a href="1.html"><p>Главная </a><span>></span> <a href=""> Блог</p></a>
+        <h1>Блог о часах</h1>
+        <img class="blog" src="31.jpg" alt="">
+      </div>
+
+
+      <script>
+        $(document).ready(function() {    
+          $("body").css("opacity", "1");
+        });
+        </script>
+
+</body>
+</html>
